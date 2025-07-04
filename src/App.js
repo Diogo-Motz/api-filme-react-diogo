@@ -4,14 +4,15 @@ import Home from "./pages/home";
 import Movie from "./pages/movie";
 
 const App = () => {
-    return (
-        <div>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/:id" element={<Movie />} />
-            </Routes>
-        </div>
-    );
+  return (
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/movie/:id" element={<Movie />} />
+      </Routes>
+    </div>
+  );
 };
 
 export default App;
+
